@@ -1,0 +1,66 @@
+@import './variables';
+// $dark-bg: #31313A;
+
+#root {
+    background-color: $dark-bg;
+}
+
+// ==================== 
+//    CHAMPIONS LIST
+// ==================== 
+.champion-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: auto;
+
+    .item {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        background-color: lightblue;
+        cursor: pointer;
+        .champ-square-img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// ==================== 
+//    CHAMPION DETAIL
+// ==================== 
+
+.champion-detail__container {
+    width: 100%;
+
+    .champion-detail__hero {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+
+        .champion-detail__hero-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            padding-top: 50px;
+            color: white;
+            background-color: rgba($color: #000000, $alpha: 0.4);
+            z-index: 99;
+            .champion-detail__hero-name {
+                font-size: 3rem;
+                text-shadow: 2px 2px 5px black;
+            }
+        }
+        .champion-detail__hero-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
