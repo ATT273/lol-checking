@@ -1,2 +1,2 @@
 export const DDRAGON_URL = 'http://ddragon.leagueoflegends.com/cdn'
-export const VERSION = '10.7.1'
+export const VERSION = '11.21.1'

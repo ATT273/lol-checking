@@ -1,4 +1,5 @@
 @import './variables';
+@import '~bootstrap/scss/bootstrap.scss';
 // $dark-bg: #31313A;
 
 #root {
@@ -55,12 +56,41 @@
                 font-size: 3rem;
                 text-shadow: 2px 2px 5px black;
             }
+            .champion-detail__hero-title {
+                margin-bottom: 25px;
+            }
+            .champion-detail__hero-blurb {
+                width: 50%;
+                word-wrap: break-word;
+            }
+           
+        }
+        .champion-detail__hero--gradient--btm {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background-image: linear-gradient(transparent,$dark-bg);
+            z-index: 99;
         }
         .champion-detail__hero-img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
+        }
+    }
+
+    .champion-detail__content {
+        width: 100%;
+        height: 1000px;
+        padding: 15px;
+        box-sizing: border-box;
+        .champion-detail-info--left {
+            width: 500px;
+            border: 2px solid #fff;
+            padding: 10px;
         }
     }
 }
